@@ -83,7 +83,7 @@ function updatePresence() {
   client.user.setPresence({
     activities: [
       {
-        name: `𝐃𝐚𝐫𝐤 𝐕𝐢𝐩 𝐂𝐨𝐦𝐩𝐥𝐞𝐱 | ${uptime}`,
+        name: `��� 𝐎𝐟��𝐢𝐚� 𝐂𝐨𝐦𝐩𝐥𝐞𝐱 | ${uptime}`,
         type: ActivityType.Playing,
       },
     ],
