@@ -63,13 +63,13 @@ client.once('ready', async () => {
   updatePresence();
   setInterval(updatePresence, 15000);
 
-  if (channelId && messageText && intervalSeconds > 0) {
-    try {
-      await sendRecurringMessage();
-    } catch (err) {
-      console.error('[sendRecurringMessage:init] failed:', err);
-    }
+  try {
+    await sendRecurringMessage();
+  } catch (err) {
+    console.error('[sendRecurringMessage:init] failed:', err);
+  }
 
+  if (channelId && messageText && intervalSeconds > 0) {
     setInterval(async () => {
       try {
         await sendRecurringMessage();
