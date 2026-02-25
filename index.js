@@ -19,7 +19,7 @@ const messageText = {
     fields: [
       {
         name: '<:ticket:1178619312112834670> Compras',
-        value: '¡Realiza tus compras únicamente en el canal de tickets!\n\n<:orange_arrow:1189991215176001606> Usa #<:ticket:1178619312112834670> Ticket',
+        value: '¡Realiza tus compras únicamente en el canal de tickets!\n\nAdquiere #<:ticket:1178619312112834670> Ticket: https://discord.com/channels/1438561167940255905/1438561170851368993',
         inline: false
       },
       {
