@@ -4,7 +4,39 @@ import { Client, GatewayIntentBits, ActivityType } from 'discord.js';
 const token = process.env.DISCORD_TOKEN;
 const channelId = process.env.TARGET_CHANNEL_ID;
 const intervalSecondsRaw = process.env.MESSAGE_INTERVAL_SECONDS;
-const messageText = process.env.RECURRING_MESSAGE;
+const messageText = `@everyone @here
+
+<:aura:1189991219270834229> <:red_dot:1189991217571520542> **DARK VIP** - Tienda Oficial
+
+<:ticket:1178619312112834670> ¡Realiza tus compras únicamente en el canal de tickets!
+
+<:orange_arrow:1189991215176001606> Usa #<:ticket:1178619312112834670> Ticket
+
+<:shield:1189991213451747358> **Garantía**
+
+• Productos verificados
+
+• Soporte 24/7
+
+• Entrega inmediata
+
+<:card:1189991210876403712> **Metodo de pago**
+
+• PayPal
+
+• Transferencia
+
+<:clock:1189991209353283624> **Horario**
+
+• Disponible 24/7
+
+• Respuesta rápida
+
+• Atención personalizada
+
+https://i.imgur.com/yourimage.png
+
+<:aura:1189991219270834229> Dark Vip © 2026 | By Linox`;
 
 if (!token) {
   throw new Error('Missing DISCORD_TOKEN env var');
@@ -18,7 +50,6 @@ const client = new Client({
 
 async function sendRecurringMessage() {
   if (!channelId) return;
-  if (!messageText) return;
 
   const channel = await client.channels.fetch(channelId);
   if (!channel) throw new Error(`Channel not found: ${channelId}`);
@@ -69,7 +100,7 @@ client.once('ready', async () => {
     console.error('[sendRecurringMessage:init] failed:', err);
   }
 
-  if (channelId && messageText && intervalSeconds > 0) {
+  if (channelId && intervalSeconds > 0) {
     setInterval(async () => {
       try {
         await sendRecurringMessage();
