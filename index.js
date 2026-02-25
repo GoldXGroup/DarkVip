@@ -30,7 +30,6 @@ async function sendRecurringMessage() {
   await channel.send({ content: messageText });
 }
 
-<<<<<<< HEAD
 let startTime = Date.now();
 
 function formatUptime(ms) {
@@ -51,21 +50,11 @@ function updatePresence() {
     activities: [
       {
         name: `𝐃𝐚𝐫𝐤 𝐕𝐢𝐩 𝐂𝐨𝐦𝐩𝐥𝐞𝐱 | ${uptime}`,
-=======
-client.once('ready', async () => {
-  if (!client.user) return;
-
-  client.user.setPresence({
-    activities: [
-      {
-        name: '𝐃𝐚𝐫𝐤 𝐕𝐢𝐩 𝐂𝐨𝐦𝐩𝐥𝐞𝐱',
->>>>>>> ecc20a2fb72302239b5e32409f9ee41585f52c03
         type: ActivityType.Playing,
       },
     ],
     status: 'online',
   });
-<<<<<<< HEAD
 }
 
 client.once('ready', async () => {
@@ -73,8 +62,6 @@ client.once('ready', async () => {
 
   updatePresence();
   setInterval(updatePresence, 15000);
-=======
->>>>>>> ecc20a2fb72302239b5e32409f9ee41585f52c03
 
   if (channelId && messageText && intervalSeconds > 0) {
     try {
