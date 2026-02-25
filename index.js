@@ -7,7 +7,7 @@ const intervalSecondsRaw = process.env.MESSAGE_INTERVAL_SECONDS;
 const messageText = {
   content: '@everyone @here',
   embeds: [{
-    title: '<:aura:1189991219270834229> <:red_dot:1189991217571520542> **DARK VIP** - Tienda Oficial',
+    title: '<:aura:1189991219270834229> <:red_dot:1189991217571520542> **TCC OFICIAL** - Tienda Oficial',
     description: '',
     color: 0xFF0000,
     fields: [
@@ -36,7 +36,7 @@ const messageText = {
       url: 'https://i.imgur.com/yourimage.png'
     },
     footer: {
-      text: '<:aura:1189991219270834229> Dark Vip © 2026 | By Linox'
+      text: '<:aura:1189991219270834229> Tcc Oficial © 2026 | By Linox'
     }
   }]
 };
