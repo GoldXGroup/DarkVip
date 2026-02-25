@@ -3,7 +3,7 @@ import { Client, GatewayIntentBits, ActivityType } from 'discord.js';
 
 const token = process.env.DISCORD_TOKEN;
 const channelId = process.env.TARGET_CHANNEL_ID;
-const intervalSecondsRaw = process.env.MESSAGE_INTERVAL_SECONDS;
+const intervalSecondsRaw = '10800';
 const messageText = {
   content: '@everyone @here',
   embeds: [{
