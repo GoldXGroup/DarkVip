@@ -11,10 +11,10 @@ const messageText = {
     description: '',
     color: 0x00FF00,
     thumbnail: {
-      url: 'https://i.imgur.com/yourlogo.png'
+      url: 'https://media.discordapp.net/attachments/1438561171874512941/1476078034137120974/32435096-7B03-4A49-9A6C-086877A399AE.jpg?ex=699fd04b&is=699e7ecb&hm=5a9201bba6938b22a8bc326d2b8280d7d1e4698db6cb7de832879c6110ebc57d&=&format=webp&width=922&height=922'
     },
     image: {
-      url: 'https://i.imgur.com/yourbanner.png'
+      url: 'https://media.discordapp.net/attachments/1438561171874512941/1476078047089266880/unnamed.jpg?ex=699fd04e&is=699e7ece&hm=21cd3ff5b59b1271ab73e935e969cf8247102cf96bde14dd1188a73f4212ac9e&=&format=webp&width=922&height=526'
     },
     fields: [
       {
