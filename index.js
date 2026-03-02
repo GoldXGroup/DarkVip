@@ -7,7 +7,7 @@ const intervalSecondsRaw = '10800';
 const messageText = {
   content: '@everyone @here',
   embeds: [{
-    title: 'TCC OFICIAL',
+    title: '𝐀𝐮𝐫𝐚 𝐇𝐚𝐱 𝐎𝐟𝐢𝐜𝐢𝐚𝐥',
     description: '',
     color: 0x00FF00,
     thumbnail: {
@@ -39,7 +39,7 @@ const messageText = {
       }
     ],
     footer: {
-      text: 'COPYRIGHT - TCC OFICIAL'
+      text: 'COPYRIGHT - 𝐀𝐮𝐫𝐚 𝐇𝐚𝐱 𝐎𝐟𝐢𝐜𝐢𝐚𝐥'
     }
   }]
 };
@@ -86,7 +86,7 @@ function updatePresence() {
   client.user.setPresence({
     activities: [
       {
-        name: `𝐓𝐜𝐜 𝐎𝐟𝐢𝐜𝐢𝐚𝐥 𝐂𝐨𝐦𝐩𝐥𝐞𝐱 | ${uptime}`,
+        name: `�𝐮𝐫𝐚 𝐇�� 𝐎𝐟𝐢𝐜𝐢𝐚𝐥 𝐂𝐨𝐦𝐩𝐥𝐞𝐱 | ${uptime}`,
         type: ActivityType.Playing,
       },
     ],
